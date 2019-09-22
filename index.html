@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Форма обратной связи</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<form class="form" action="https://digital-spectr.com/ac/academy.php" method="post">
+			<h1 class="form__title">Задать вопрос</h1>
+			<input class="form__input" type="text" name="name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Фамилия Имя Отчество*" required>
+			<input class="form__input" type="tel" name="phone" placeholder="Телефон*"
+			pattern="^[0-9]+$" required=>
+			<input class="form__input" type="email" name="email" placeholder="Email" pattern="\S+@[a-z]+.[a-z]+">
+			<input class="form__button" type="submit" value="Отправить запрос">
+		</form>
+	</body>
+</html>
